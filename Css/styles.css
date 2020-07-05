@@ -1,0 +1,103 @@
+/* --------------------------- */
+/* ------ Basic Setup -------- */
+/* --------------------------- */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* --------------------------- */
+/* --- Reusable Components --- */
+/* --------------------------- */
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.btn:link, .btn:visited {
+    font-size: 130%;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: #e0e04a;
+    color: black;
+    padding: 12px 16px;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: background-color 0.5s, font-size 0.5s;
+}
+
+.btn-hung:link, .btn-hung:visited {
+    margin-right: 10px;
+}
+
+.btn:hover, .btn:active {
+    background-color: #f6f6cc;
+    font-size: 150%;
+}
+
+/* --------------------------- */
+/* ---------- Header --------- */
+/* --------------------------- */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(Images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.hero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1140px;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    font-size: 200%;
+    color: azure;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 22px 20px;
+}
+
+.main-nav li a:link, .main-nav li a:visited  {
+    font-size: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:active, .main-nav li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e04a;
+}
