@@ -1,0 +1,87 @@
+/* small phones: 0-480px */
+@media only screen and (max-width: 480px) {
+    .cform { width: 100%;}
+    .plan-price {
+        font-size: 110%;
+        font-weight: 120;
+    }
+    .plan { margin-top: 10px; }
+    .cform .col{ width: 64%; }
+    .cform .span-1-of-3 { margin-right: 6px; }
+}
+
+/* Ipad: 480-767px */
+@media only screen and (max-width: 767px) {
+    section { padding: 25px 0; }
+    body { font-size: 10px;}
+    h2 { font-size: 120%; }
+    .logo { height: 70px; }
+    .btn:link, .btn:visited, input[type=submit]{
+        font-size: 110%;
+        font-weight: 400;
+    }
+    .btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {font-size: 130%;}
+    .row { padding: 1%; }
+    .col { width: 100%; }
+    .main-nav { display: none; }
+    .box p { margin: 0 auto; }
+    .features .box img { margin: 7% 42%;}
+    h3 { font-size: 106%; }
+    .steps-box:first-child {
+        text-align: center;
+        margin-top: 0px;
+    }
+    .steps:first-child { margin-top: 40px; }
+    .download-btn img { height: 40px;}
+    .plan-price {
+        font-size: 150%;
+        font-weight: 200;
+    }
+    .footer-social-links {
+        margin-top: 8px;
+        float: left; 
+    }
+}
+
+/* Ipad, portrait mode: 767-1023px */
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 17px;}
+    section { padding: 45px 0; }
+    .feat-par {
+        margin-left: 12%;
+        width: 76%;
+    }
+    .App-Image { width: 50%; }
+    .steps { margin-bottom: 18px; }
+    .download-btn img { margin: 10px 12px 0 0; }
+    .c_icon { font-size: 90%; }
+    .cform .row { padding: 0%; }
+}
+
+/* 1023-1200px */
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { 
+        width: 100%;
+        padding: 2%; 
+    }
+    
+    .cform { 
+        width: 70%;
+        margin: 0 18%;
+    }
+
+    .cform .span-1-of-3 { width: 30%; }
+    input[type=email], input[type=text], select, textarea { width: 90%; }
+    .cform .row { padding: 2%; }
+    h4 {
+        font-size: 90%;
+        text-align: center;
+    }
+}
