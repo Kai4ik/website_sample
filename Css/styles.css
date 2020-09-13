@@ -113,8 +113,8 @@ h3:after {
 /* ---------- Header --------- */
 /* --------------------------- */
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67))), url(Images/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(Images/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67))), url('img/hero-min.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url('img/hero-min.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -131,14 +131,17 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo, .logo-black{
     height: 100px;
     width: auto;
     float: left;
 }
 
+.logo-black { display: none; }
+
 .main-nav {
     float: right;
+    display: inline-block;
 }
 
 .main-nav li {
@@ -162,6 +165,52 @@ header {
 }
 
 /* --------------------------- */
+/* ----- Sticky navigation --- */
+/* --------------------------- */
+
+.sticky-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #f2f2f2;
+    top: 0;
+    -webkit-box-shadow: 0 3px 2px #c1c0c0;
+    box-shadow: 0 3px 2px #c1c0c0;
+    z-index: 9999;
+}
+
+.sticky-nav .main-nav li a:link, .sticky-nav .main-nav li a:visited  { 
+    color: #1f1f1f; 
+    font-size: 80%;
+}
+
+.sticky-nav .logo { display: none; }
+
+.sticky-nav .logo-black { 
+    margin: 5px 0;
+    display: block; 
+    height: 50px;
+    width: auto;
+}
+
+.sticky-nav .main-nav li { margin: 14px 20px; }
+
+/* --------------------------- */
+/* ----- Hamburger button ---- */
+/* --------------------------- */
+
+#hamburger-btn, #close-btn {
+    font-size: 180%;
+    color: white;
+}
+
+.menu-btn, .close-btn {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* --------------------------- */
 /* --------- Features -------- */
 /* --------------------------- */
 
@@ -173,6 +222,14 @@ header {
     margin-left: 20%;
     width: 60%;
     line-height: 145%;
+}
+
+.feat-animat {
+    opacity: 0;
+}
+
+.feat-animat.animate__animated {
+    opacity: 1;
 }
 
 /* --------------------------- */
@@ -231,6 +288,9 @@ header {
 
 .App-Image {
     width: 40%;
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .steps {
@@ -260,6 +320,10 @@ header {
     width: auto;
     height: 50px;
     margin: 20px 9px 0 0;
+}
+
+.App-Image.animate__animated {
+    opacity: 1;
 }
 
 /* --------------------------- */
@@ -299,8 +363,8 @@ header {
 /* --------------------------- */
 
 .feedback {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67))), url(Images/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(Images/back-customers.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67))), url('img/back-customers-min.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url('img/back-customers-min.jpg');
     background-size: cover;
     color: azure;
     background-attachment: fixed;
@@ -351,7 +415,12 @@ cite {
     padding-bottom: 5px;
     -webkit-box-shadow: 2px 2px #e8e8e8;
     box-shadow: 2px 2px #e8e8e8;
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
+
+.plan.animate__animated { opacity: 1; }
 
 .plan div {
     padding: 12px;

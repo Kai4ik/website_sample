@@ -23,7 +23,6 @@
     .btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {font-size: 130%;}
     .row { padding: 1%; }
     .col { width: 100%; }
-    .main-nav { display: none; }
     .box p { margin: 0 auto; }
     .features .box img { margin: 7% 42%;}
     h3 { font-size: 106%; }
@@ -40,6 +39,23 @@
     .footer-social-links {
         margin-top: 8px;
         float: left; 
+    }
+    
+    .main-nav { display: none; }
+    .menu-btn { display: inline-block; }
+    .main-nav { float: left; }
+    .main-nav li { 
+        display: block; 
+        margin: 10px 20px;
+    }
+    .main-nav li a:link,  
+    .main-nav li a:visited { 
+        display: block; 
+        border: 0;
+    }
+    
+    .sticky-nav #hamburger-btn, .sticky-nav #close-btn {
+        color: black;
     }
 }
 
